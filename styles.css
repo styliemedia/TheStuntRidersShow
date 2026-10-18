@@ -257,3 +257,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .seen li { padding: 24px 0; border-bottom: 1px solid var(--line); }
 .seen h3 { font: 900 1.6rem/1 var(--display); text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
 .seen p { color: var(--muted); }
+
+/* Reviews */
+.reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
+.reviews li { background: var(--black-3); padding: clamp(22px, 3vw, 32px); display: flex; flex-direction: column; gap: 18px; border-top: 3px solid var(--orange); }
+.reviews blockquote { margin: 0; font-size: 1.0625rem; line-height: 1.55; color: var(--soft); }
+.reviews p { margin-top: auto; font: 400 1.75rem/1 var(--hand); color: var(--orange); }
+.section--tight { padding-top: 0; }
+@media (min-width: 900px) { .acts { grid-template-columns: repeat(3, minmax(0, 1fr)); } .team { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
