@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Stunt Riders | Live stunt show for shows, festivals and events</title>
-  <meta name="description" content="The Stunt Riders: a live stunt show with two-wheel car driving, quad stunts and full arena commentary, for county shows, festivals and events across the UK.">
+  <meta name="description" content="The Stunt Riders: a live stunt show with motorbike jumps, fire stunts, two-wheel car driving and quad stunts, performed in three-piece suits, for county shows, festivals and events across the UK.">
   <meta property="og:title" content="The Stunt Riders">
-  <meta property="og:description" content="Live stunt show for county shows, festivals and events across the UK.">
+  <meta property="og:description" content="We don't just do stunts, we perform them. Live stunt show for county shows, festivals and events across the UK.">
+  <meta property="og:image" content="https://thestuntridersshow.co.uk/assets/acts/car.jpg">
   <meta property="og:url" content="https://thestuntridersshow.co.uk/">
   <link rel="canonical" href="https://thestuntridersshow.co.uk/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Libre+Caslon+Text:wght@700&family=Manrope:wght@400;500;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,13 +35,14 @@
 
 <main id="top">
 
-  <!-- HERO PHOTO: add assets/hero.jpg, then add class "hero--photo" next to "hero--show" below. -->
-  <section class="hero hero--show" aria-label="Introduction">
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__photo">
+      <img src="assets/hero.jpg" alt="A stunt rider jumps a motorbike high over a car while the driver looks on" width="1200" height="1696">
+    </div>
     <div class="hero__inner">
       <p class="label">Live stunt show</p>
       <h1 class="hero__name">The Stunt<br><span>Riders</span></h1>
       <p class="hero__shout">give us a wave, give us a cheer, give us a shout!</p>
-      <p class="hero__lede">Cars on two wheels, quads standing on end and a commentator who keeps the whole crowd shouting. A full stunt show for county shows, festivals and motor events across the UK.</p>
       <div class="hero__actions">
         <a class="btn btn--orange" href="#book">Book the show</a>
         <a class="btn btn--outline" href="#show">See the acts</a>
@@ -49,27 +52,52 @@
 
   <section id="show" class="section" aria-labelledby="show-title">
     <p class="label">The show</p>
-    <h2 id="show-title" class="title">What the crowd sees</h2>
+    <h2 id="show-title" class="title">We don't just do stunts. We perform them.</h2>
+    <p class="intro">Bikes, quads and cars in one show, with live commentary that keeps the whole crowd shouting. You won't find another show with this much variety.</p>
     <ul class="acts">
       <li class="act">
+        <img class="act__img" src="assets/acts/jumps.jpg" alt="A motocross rider in mid-air over a county show arena" loading="lazy">
+        <h3>Motorbike jumps</h3>
+        <p>Big air on motocross bikes, right over the top of cars.</p>
+      </li>
+      <li class="act">
+        <img class="act__img" src="assets/acts/fire.jpg" alt="A rider bursting through a wall of fire on a motorbike" loading="lazy">
+        <h3>Fire stunts</h3>
+        <p>Riders through walls and rings of fire, the moment everyone films on their phones.</p>
+      </li>
+      <li class="act">
+        <img class="act__img" src="assets/acts/car.jpg" alt="A blue 4x4 driven balanced on two wheels in front of a crowd" loading="lazy">
         <h3>Two-wheel car</h3>
-        <p>A car driven balanced on two wheels around a grass arena, from the UK's best two-wheel car stunt driver on grass.</p>
-        <p class="act__tag">on two wheels!</p>
+        <p>A car driven balanced on two wheels around a grass arena, by the UK's best two-wheel car stunt driver on grass.</p>
       </li>
       <li class="act">
+        <img class="act__img" src="assets/acts/quads.jpg" alt="A rider wheelies a quad along the barrier, high-fiving the crowd" loading="lazy">
         <h3>Quad stunts</h3>
-        <p>Wheelies, side-wheelies, two-quad routines and handstands on a moving quad.</p>
-        <p class="act__tag">hold on tight!</p>
+        <p>Wheelies, side-wheelies and handstands, often right along the barrier giving out high-fives.</p>
       </li>
-      <li class="act">
-        <h3><span class="todo">Act 3</span></h3>
-        <p><span class="todo">One or two lines on this act.</span></p>
-      </li>
-      <li class="act">
-        <h3>Live commentary</h3>
-        <p>Every stunt talked through on the mic, so the crowd knows what's coming and makes some noise when it lands.</p>
-        <p class="act__tag">make some noise!</p>
-      </li>
+    </ul>
+  </section>
+
+  <section class="suited band" aria-labelledby="suited-title">
+    <div class="section suited__inner">
+      <img class="suited__img" src="assets/suits.jpg" alt="A stunt rider in a three-piece suit and motocross helmet straightening his tie" loading="lazy">
+      <div>
+        <p class="label">The smartest show around</p>
+        <h2 id="suited-title" class="title">Stunts in three-piece suits</h2>
+        <p class="suited__text">We perform in full three-piece suits, so the show looks as sharp as it rides. It's the part of the show people remember.</p>
+        <p class="hero__shout suited__shout">suited and booted!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="seen-title">
+    <p class="label">As seen on</p>
+    <h2 id="seen-title" class="title">In the news and on screen</h2>
+    <ul class="seen">
+      <li><h3>London's New Year's Day Parade</h3><p>Performing through central London in front of 500,000 people, with the parade broadcast around the world.</p></li>
+      <li><h3>Ladbible: Made It</h3><p>Featured in "The Daredevil" episode of Ladbible's Made It series, watched over 2.2 million times.</p></li>
+      <li><h3>BBC News</h3><p>Filmed for a BBC News report at one of our shows.</p></li>
+      <li><h3>Local press</h3><p>Regular coverage in papers such as the Eastern Daily Press: "Wheelie great day at country show".</p></li>
     </ul>
   </section>
 
@@ -119,8 +147,8 @@
       <!-- RIDER PHOTOS: put a portrait in assets/team/ and replace the placeholder text with <img src="assets/team/NAME.jpg" alt="NAME"> -->
       <ul class="team">
         <li class="rider">
-          <div class="rider__photo">Photo coming soon</div>
-          <div class="rider__body"><h3>Brandon Baily</h3><p>Car stunt driver, ATV stunt rider and arena MC</p></div>
+          <div class="rider__photo"><img src="assets/suits.jpg" alt="Brandon Baily" loading="lazy"></div>
+          <div class="rider__body"><h3>Brandon Baily</h3><p>Team manager, car stunt driver, ATV stunt rider and arena MC</p></div>
         </li>
         <li class="rider">
           <div class="rider__photo">Photo coming soon</div>

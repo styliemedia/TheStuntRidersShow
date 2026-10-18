@@ -207,8 +207,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 
 /* Acts */
 .acts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
-.act { background: var(--black-3); padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 12px; min-height: 260px; box-shadow: inset 0 3px 0 var(--orange); }
-.act h3 { font: 900 clamp(1.75rem, 2.6vw, 2.4rem)/.95 var(--display); overflow-wrap: break-word; text-transform: uppercase; color: var(--orange); }
+.act { background: var(--black-3); padding: 0 0 clamp(22px, 3vw, 30px); display: flex; flex-direction: column; gap: 10px; border-bottom: 3px solid var(--orange); }
+.act__img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: 8px; }
+.act h3, .act p { padding: 0 clamp(20px, 2.5vw, 28px); }
+.act h3 { font: 900 clamp(1.6rem, 2.2vw, 2.2rem)/.95 var(--display); text-transform: uppercase; color: var(--orange); }
 .act p { color: var(--muted); }
 .act .act__tag { margin-top: auto; font: 400 1.75rem/1 var(--hand); color: var(--chalk); transform: rotate(-3deg); transform-origin: left; }
 
@@ -238,3 +240,20 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .todo { background: rgba(255, 106, 19, .16); outline: 1px dashed var(--orange); padding: 0 .25em; }
 .book .todo { background: rgba(17, 17, 17, .12); outline-color: var(--black); }
 @media (max-width: 440px) { .topbar__inner { gap: 12px; } .topbar__name { font-size: 1.15rem; } .topbar .btn--small { padding: 9px 12px; font-size: .875rem; } }
+
+.intro { max-width: 56ch; margin: -16px 0 40px; font-size: 1.2rem; color: var(--soft); }
+.section .title { max-width: 20ch; }
+
+/* Three-piece suits */
+.suited__inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 88px); align-items: center; }
+.suited__img { width: 100%; max-width: 480px; justify-self: center; aspect-ratio: 1 / 1.08; object-fit: cover; box-shadow: clamp(10px, 1.4vw, 16px) clamp(10px, 1.4vw, 16px) 0 var(--orange); }
+.suited .title { margin-bottom: 20px; }
+.suited__text { max-width: 44ch; font-size: 1.2rem; color: var(--soft); }
+.suited__shout { margin-top: 28px; }
+@media (max-width: 760px) { .suited__inner { grid-template-columns: 1fr; } }
+
+/* As seen on */
+.seen { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 0 32px; border-top: 2px solid var(--orange); }
+.seen li { padding: 24px 0; border-bottom: 1px solid var(--line); }
+.seen h3 { font: 900 1.6rem/1 var(--display); text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
+.seen p { color: var(--muted); }
